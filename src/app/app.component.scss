@@ -1,0 +1,27 @@
+:host {
+  --width: 280px;
+
+  mat-form-field {
+    width: var(--width);
+  }
+
+  .show-only-unchecked {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .item {
+    width: var(--width);
+
+    .delete-btn {
+      line-height: 10px;
+      height: 10px;
+      float: right;
+    }
+  }
+}
+
+::ng-deep .mat-form-field-infix {
+  padding: 0.5em 0 !important;
+  border-top: 0.5em solid transparent;
+}
